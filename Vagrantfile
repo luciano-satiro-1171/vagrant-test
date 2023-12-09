@@ -16,5 +16,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "script.sh"
 
 # Sincronizar uma diretório local para o diretório da vm:
-  config.vm.synced_folder "src/", "/var/www/html/website"
+# no navegador: http://192.168.1.4/cep.html:
+  config.vm.synced_folder "src/", "/var/www/html/"
 end
